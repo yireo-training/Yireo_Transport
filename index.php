@@ -13,7 +13,8 @@ try {
     $bicycle = new Bicycle($wheels);
     echo $bicycle->getWheels() . "\n";
 
-} catch(InvalidArgumentException $e) {
+} catch (InvalidArgumentException $e) {
+    echo "Error logged\n";
     $stream = new StreamHandler('debug.log');
     $logger = new Logger('Yireo_Transport', [$stream]);
     $logger->notice($e->getLogMessage());

@@ -3,5 +3,5 @@ namespace Yireo\Transport\Api;
 
 interface TransportInterface
 {
-    public function addPerson();
+    public function addPerson(PersonInterface $person);
 }

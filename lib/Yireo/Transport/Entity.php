@@ -1,5 +1,11 @@
 <?php
+
 namespace Yireo\Transport;
 
-class Entity {
+class Entity
+{
+    public function __toString() : string
+    {
+        return (string)get_class($this);
+    }
 }
