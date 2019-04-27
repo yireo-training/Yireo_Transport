@@ -1,4 +1,6 @@
 {
+    "name": "yireo-training/transport",
+    "description": "Dummy PHP application",
     "require": {
         "monolog/monolog": "^1.22"
     }
